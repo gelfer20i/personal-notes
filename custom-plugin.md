@@ -119,3 +119,13 @@ to add more executors, execute...
 ```s
 nx generate @nrwl/nx-plugin:executor [executor] --project=[pluginName]
 ```
+
+# Publishing the plugin to NPM
+
+1. nx run auth:build
+2. npm publish ./dist/packages/auth --access public
+
+# Using the plugin in a new workspace
+
+1. yarn add -D @20i/nx
+2. nx g @20i/nx:auth my-auth
