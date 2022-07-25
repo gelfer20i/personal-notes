@@ -141,7 +141,7 @@ export class AnimalDogsDto {
 import { Public } from "@20i/cognito-nestjs";
 import { DogService } from "@applications/services";
 import { Controller, Get, NotFoundException, Param } from "@nestjs/common";
-import { AnimalDogDto } from "./animal-dog.dto";
+import { AnimalDogDto, AnimalDogsDto } from "./animal-dog.dto";
 
 @Controller("/animal")
 export class AnimalController {
